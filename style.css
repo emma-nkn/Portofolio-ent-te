@@ -1,0 +1,400 @@
+/*intialisation css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    height: 100%;
+    
+}
+/*Session Navbar css*/
+
+#hero{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    padding: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(10, 9, 9);
+}
+.nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+}
+ul li a{
+    font-size: 15px;
+}
+.infoimg{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+}
+.infoimg img{
+   width: 20px;
+}
+.infoimg p{
+    font-size: 12px;
+    color: white;
+ }
+ #hero .buttons a{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+}
+.nav{
+    
+}
+
+/*Session header css*/
+
+header h2 {
+    color: rgb(148, 4, 105);
+    font-size: 18px;
+    font-weight: 600;
+}
+span{
+    color: white;
+}
+span:hover{
+    color: rgb(148, 4, 105);
+}
+header {
+    padding: 7% 10%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: animation2 2s linear;
+
+}
+header a{
+    padding: 8px 30px;
+    text-decoration: 0;
+    font-size: 16px;
+    border: 2px solid rgb(148, 4, 105);
+    color: white;
+    transition: 0.5s;
+    position: relative;
+}
+header a:hover::after{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(148, 4, 105);
+    border: 2px solid white;
+    border-radius: 50%;
+}
+header a:hover::before{
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(148, 4, 105);
+    border: 2px solid white;
+    border-radius: 50%;
+}
+header a:hover{
+    background-color: rgb(148, 4, 105);
+    border: 2px solid white;
+    border-radius: 6px;
+    transform: rotate(10deg);
+    color: white;
+}
+ 
+.home{
+    display: flex;
+    align-items: center;
+    height: calc(100% - 80px);
+    justify-content: space-between;
+}
+.left_right {
+    padding: 0% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left {
+    width: 45%;
+    animation-delay: 1s;
+    animation: animation1 2s linear;
+}
+.left span{
+    color: rgb(148, 4, 105);
+    font-size: 12px;
+}
+.left h1{
+   color: white;
+   margin: 20px 0;
+   font-size: 35px;
+   animation-delay: 2s;
+   animation: animation1 2s linear;
+}
+.left .buttons{
+    margin: 30px 0;
+    padding-top: 20px;
+    animation-delay: 3s;
+    animation: animation1 2s linear;
+ }
+ .left .buttons a{
+    padding: 8px 30px;
+    text-decoration: none;
+    font-size: 12px;
+ }
+.buttons a:first-child{
+    border: 2px solid rgb(148, 4, 105);
+    color: white;
+    font-size: 25px;
+ }
+ .buttons a:last-child{
+    border: 1px solid white;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(148, 4, 105);
+    margin-left: 10px;
+ }
+ .buttons a:hover{
+    border: 2px solid white;
+    color: rgb(148, 4, 105);
+ }
+ .buttons a:hover:last-child{
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+ }
+ .left p{
+    color: white;
+    font-size: 15px;
+ }
+.right {
+    width: 40%;
+    perspective: 1000px;
+}
+.right img { 
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+    animation-delay: 1s;
+    animation: animation1 2s linear;
+}
+.right img:hover{ 
+    transform: rotateY(200deg);
+}
+
+@keyframes animation1 {
+    from{
+        transform: translatex(-600px);
+    } 
+}
+@keyframes animation2 {
+    from{
+        transform: translatey(-100px);
+    } 
+}  
+
+/* session compétences*/
+
+.competence{
+    width: large;
+    margin-top: 30px;
+    height: 450px;
+    padding: 0 10%;
+    background-color: rgb(10, 9, 9);
+    color: white;
+ }
+ .competence h2{
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    animation-delay: 3s;
+    animation: animation1 2s linear;
+ }
+ .competence h2:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(148, 4, 105);
+}
+.haut{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+.bas{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .contenu{
+    width: 500px;
+    padding: 10px;
+    background-color: rgb(148, 4, 105);
+    color: white;
+    border: solid 2px white;
+    border-radius: 10px;
+ }
+ .contenu h3{
+   font-size: 20px;
+   color: black;
+   font-weight: 800;
+ }
+ .contenu p{
+    padding: 10px 0px;
+  }
+.liendetail a{
+    color: black;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    padding-left: 80%;
+    transition: transform 0.4s;
+}
+.liendetail a:hover{
+    transform: scale(1.3);
+    color: white;
+}
+ .bas{
+   
+ }
+ .bas{
+   
+ }
+/* session formulaire de contact css*/
+
+.contact_session{
+    margin: 30px;
+   padding: 0 10%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .contact_session .leftimg{
+    width: 600px;
+    height: 100%;
+}
+.leftimg h2{
+    margin-bottom: 3rem;
+    padding-top: 20px;
+    color: rgb(148, 4, 105);
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+}  
+
+.leftimg form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 4rem auto;
+    text-align: center;
+}  
+.leftimg form .input_box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}  
+.leftimg form .input_box input,
+.input_groupe2 textarea{
+    width: 100%;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+    background: transparent;
+    border: 2px solid rgb(148, 4, 105);
+    border-radius: 10px;
+    resize: none;
+} 
+.leftimg form .input_box input{
+   height: 65px;
+   padding: 20px;
+   font-size: 1rem;
+}
+.input_groupe2 .btn{
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+    font-size: 15px;
+    border-radius: 2px;
+    background-color: rgb(148, 4, 105);
+} 
+.leftimg h2{
+
+}  
+.rightimg img{
+    width: 100%;
+    border-radius: 50%;
+
+ }
+
+
+/* session footer css*/
+
+.footersite{
+    background-color: rgb(10, 9, 9);
+    color: white;
+ }
+.footerlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+} 
+.footerlogo img{
+    width: 20px;
+    margin-top: 20px;
+}
+.footerlien ul{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1rem;    
+}
+ul a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+} 
+ul a:hover{
+    color: rgb(148, 4, 105);
+    text-decoration: underline;
+} 
+.droitauteur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    gap: 0.3rem;
+} 
+.droitauteur img{
+    width: 10px;
+} 
+.droitauteur span{
+    font-size: 25px;
+    font-weight: 200;
+} 
+.droitauteur img{
+    width: 10px;
+} 
