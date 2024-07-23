@@ -7,7 +7,7 @@
 }
   body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: black;
+    background-color: rgb(10, 9, 9);
     height: 100%;
     
 }
@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(10, 9, 9);
+    background-color: black;
 }
 .nav ul{
     width: 100%;
@@ -52,9 +52,6 @@ ul li a{
     font-size: 15px;
     font-weight: 800;
 }
-.nav{
-    
-}
 
 /*Session header css*/
 
@@ -63,7 +60,7 @@ header h2 {
     font-size: 18px;
     font-weight: 600;
 }
-span{
+header span{
     color: white;
 }
 span:hover{
@@ -210,6 +207,36 @@ header a:hover{
     } 
 }  
 
+hr{
+    width: 50%;
+    background-color: red;
+}   
+
+/* session bio*/
+.biographie{
+    width: large;
+    margin-top: 30px;
+    height: 450px;
+    padding: 0 10%;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textcontenu{
+    width: 100%;
+    height: 200px;
+    margin: 0px 20px ;
+    font-weight: 500;
+}
+.forme1{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* session compétences*/
 
 .competence{
@@ -271,12 +298,94 @@ header a:hover{
     transform: scale(1.3);
     color: white;
 }
- .bas{
-   
- }
- .bas{
-   
- }
+
+/* session realisation*/
+.re_section{
+   position: relative;
+   background-color: white;
+   height: 100%;
+   margin: 30px 0px;
+   padding: 2% 10%;
+}
+.titre_section p{
+    margin-top: 50px 0px;
+    color: rgb(148, 4, 105);
+    font-size: 35px;
+    font-weight: 600;
+
+}
+.titre_section hr{
+    position: absolute;
+    top: 50px;
+    width: 71%;
+    margin: 0px 120px;
+    border: solid 1px black;
+    border-radius: 2px;
+}
+/*.ligne{
+    width: 50px;
+    padding-left: 52px;
+    border: solid 2px red;
+}*/
+.re_presentation{
+    position: absolute;
+    top: 80px;
+    right: 138px;
+}
+.re_presentation ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+}
+.re_images{
+    margin: 30px 0px;
+}
+.images_box{
+    margin: 30px 0px;
+}
+.re_images img{
+    width: 300px;
+    height: 230px;
+    border-radius: 14px;
+}
+.titre_section{
+
+}
+
+.realisations{
+    margin: 20px;
+    width: 100% ;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+image_section{
+    
+} 
+.image_section{
+    width: 100%;
+    padding: 10px;
+    height: 170px;
+    background-image: url(images/pexels-content-pixie-2736497.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+.re_section{
+    
+} 
+.re_section{
+    
+ } 
 /* session formulaire de contact css*/
 
 .contact_session{
@@ -351,7 +460,7 @@ header a:hover{
 /* session footer css*/
 
 .footersite{
-    background-color: rgb(10, 9, 9);
+    background-color: black;
     color: white;
  }
 .footerlogo {
